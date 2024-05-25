@@ -13,7 +13,7 @@ const logger = bunyan.createLogger({ name: 'Servidor de mi aplicacion' });
 
 app.use('/brags', bragsRouter); 
 
-app.get('/', (req, res, next)=>{
+app.get('/brags', (req, res, next)=>{
     try {
         res.status(200).json("Haciendo GET en /")
     } catch (error) {
